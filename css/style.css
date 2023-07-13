@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*   header   */
+.item1 {
+  grid-area: header;
+  width: 100%;
+  height: 75px;
+  background: #FFF;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*   main  */
+.item3 {
+  grid-area: main;
+  width:100%;
+  gap: 1rem;
+}
+
+/*  aside   */
+.item4 {
+  grid-area: aside;
+}
+
+/* footer  */
+.item5 {
+  grid-area: footer;
+  width:100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main aside aside'
+    'footer footer footer footer footer footer';
+  gap: .625rem;
+  padding: .625rem;
+  background-color: #fafafa;
+  font-family: Roboto, sans-serif;
+  width:100%;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+
+
+/* resto del estilo lo hago con flex */
+body{
+  background-color: #FAFAFA;
+ display:flex;
+ flex-direction: column;
+ min-height: 100vh;
+ min-width: 100%;
+
+}
+.item1 {
+  /* header  */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  min-width: 100%;
+}
+
+input {
+  width: 25rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  border: .0187rem solid #222;
+  background: #FAFAFA;
+  padding-left: 1rem;
+}
+
+.item3 {
+  /*main  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 90%;
+
+}
+
+.fotitos7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.25rem;
+  height: 6.25rem;
+  border-radius: .3125rem;
+  border: 0.025rem solid rgba(34, 34, 34, 0.50);
+  background: #FFF;
+  width: 37.5rem;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3125rem;
+  border: 0.025rem solid rgba(34, 34, 34, 0.50);
+  background: #FFF;
+  width: 37.5rem;
+  padding-bottom: 1rem;
+  font-family: Inter;
+height: fit-content;
+}
+
+.fotito {
+  border-radius: 100%;
+  width: 3.75rem;
+}
+
+.fotito30 {
+  width: 1.875rem;
+}
+
+.fotito50 {
+  width: 3.125rem;
+}
+
+.fotito60 {
+  width: 3.75rem;
+}
+
+.cardHeader {
+  border-radius: .3125rem .3125rem 0rem 0rem;
+  border-bottom: .025rem solid rgba(34, 34, 34, 0.50);
+  background: #FFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5625rem;
+  width: 100%;
+}
+
+.tresPuntitos {
+  text-align: right;
+}
+
+
+.cardImg {
+  background-image: url(../public/images/foto-perfilGrande.png);
+  background-size: cover;
+  width: 30.5rem;
+  height: 30.5rem;
+  margin-top: 1.25rem;
+
+}
+
+.cardBody {
+  margin-left: -22%;
+  gap: 1rem;
+  line-height: 1.5rem;
+}
+
+
+.cardIconitos {
+  display: flex;
+  flex-direction: row;
+  padding: .5625rem 0px;
+  justify-content: left;
+  align-items: start;
+  gap: 1rem;
+  margin-left: -18%;
+
+  line-height: 1.5rem;
+}
+
+.cardIconitos img {
+  padding-right: 1rem;
+
+}
+
+.cardTexto {
+  color: #000;
+  font-size: .625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: -18%;
+  gap: 1rem;
+  line-height: 1.5rem;
+}
+
+
+/* fin main  */
+.item4 {
+  /* right o aside */
+  font-family: Inter;
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  gap: 1rem;
+
+}
+
+.fotoynombre {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.25rem
+}
+
+.titular,
+.primerSugerido,
+.segundoSugerido {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caja2 {
+  color: #2aa5f7;
+}
+
+.caja0 {
+  display: flex;
+  flex-direction: column;
+}
+
+.item5 {
+  /*  footer */
+  color: #fff;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: .625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0.5rem 0rem;
+
+}
+
+/** mediaqueries  */
+@media screen and (max-width:1240px){
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header '
+      'main main main  '
+      'aside aside aside'
+      'footer footer footer ';
+    gap: .625rem;
+    padding: .625rem;
+    background-color: #fafafa;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .main, .aside{
+    min-width: 100%;
+  }
+  .aside{
+    min-width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    column-gap: 3rem;
+    margin-left: 5rem;
+  }
+}
+@media screen and (max-width:700px) {
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header '
+      'main main main  '
+      'aside aside aside'
+      'footer footer footer ';
+    gap: .625rem;
+    padding: .625rem;
+    background-color: #fafafa;
+    font-family: Roboto, sans-serif;
+  }
+ 
+.card, .fotitos7, .cardHeader, .cardBody, .cardTexto, .cardIconitos {
+  width:90%;
+}
+.tres{
+  display:none;
+}
+.fotitos7{
+  display:flex;
+  flex-direction: row-reverse;
+  border-radius: .3125rem;
+  border: .025rem solid rgba(34, 34, 34, 0.50);
+  background: #FFF;
+ 
+}
+
+.cardHeader{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardImg{
+  width:90%;
+  height:25rem;
+  background-size: contain;
+  background-clip:inherit;
+  background-repeat: no-repeat;
+}
+.cardBody{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.cardTexto, .cardIconitos{
+  margin-left: 3.125rem;
+}
+
+.fotito30{
+  width:2.5rem;
+}
+.fotito50, .fotito60{
+  width:4rem;
+}
+.aside{
+  display:none;
+}
+ 
+
+.header{
+  height:6rem;
+  margin:0px;
+  padding:1rem;
+  display:flex;
+  flex-direction: column;
+  
+}
+#busqueda{
+  width:90vw;
+  margin-top: 1.875rem;
+}
+.fotitoheader{
+  position: absolute;
+  top:1rem;
+  right:1.875rem;
+  width:2rem;
+ 
+}
+.titulopagina{
+  position: absolute;
+  top:1rem;
+  left:1.875rem;
+}
+footer{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding:0.5rem 0rem;
+}
+}
+
+/**** font size  (rem) ***/
+/*Pantallas muy grandes  (desktops de más de 1200px de ancho)
+//No hace falta media-query porque será nuestro diseño por defecto*/
+
+/*Pantallas grandes (desktops de menos de 1200px)*/
+@media (max-width: 1199.98px) { 
+  html{
+    font-size:20px;
+  }
+ }
+
+/*Pantallas medianas (tablets de menos de 992px)*/
+@media (max-width: 991.98px) { 
+  html{
+    font-size:18px;
+  }
+ }
+
+/*//Pantallas pequeñas (móviles en landscape de menos de 768px)*/
+@media (max-width: 767.98px) { 
+  @media (max-width: 991.98px) { 
+    html{
+      font-size:16px;
+    }
+   }
+}
+
+/*Pantallas muy pequeñas (móviles en portrait de menos de 576px)*/
+@media (max-width: 575.98px) {  
+    html{
+      font-size:14px;
+    }
+   }
